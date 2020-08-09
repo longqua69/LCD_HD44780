@@ -8,6 +8,10 @@
 #define LCD_Cursor_Display_Shift        0x1C
 #define LCD_Function_Set                0x2C    // Configure 4-bit mode, 2 lines, 5x10 dots matrix
 
+void LCD_Command (uint8_t ins);
+uint8_t LCD_Busy_Flag (void);
+void LCD_Send_String(unsigned char str);
+
 int main(void)
 {
 
